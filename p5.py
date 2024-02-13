@@ -33,7 +33,7 @@ def combinationSum(candidates, target):
             dfs(i, target - candidates[i], path + [candidates[i]])
     
     result = []
-    candidates.sort() # Optional, makes the process a bit more efficient
+    candidates.sort() 
     dfs(0, target, [])
     return result
 
